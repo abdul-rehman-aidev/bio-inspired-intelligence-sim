@@ -104,3 +104,8 @@ class Brain:
                     xticklabels=round(self.rows/10),   # Only show a label every 10 neurons
                     yticklabels=round(self.cols/10))
         plt.show()
+
+brain = Brain(50, 50)
+# Fire a strong signal from the center
+brain.initialize(25, 25, 100000) 
+brain.heatmap()
